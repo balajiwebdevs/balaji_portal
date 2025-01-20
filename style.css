@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* FORM DESIGN HERE ----------------------------------------------------------------------*/
+.form-container{
+    box-sizing: border-box;
+    min-height: 100vh;
+    width: 100vw;
+    margin-bottom: 20px;
+    
+}
+.form-content{
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px;
+    border: 2px solid black;
+    margin-top: 10px;
+}
+.form-content .title{
+    color: #009879;
+    font-size: 25px;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+.input-box{
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+.input-box label{
+    color: #009879;
+    width: 200px;
+    margin-right: 10px;
+    font-size: 15px;
+    font-weight: 700;
+}
+.input-box .add{
+    display: flex;
+    align-items: center;
+}
+.add #stat{
+    margin-right: 118px;
+}
+.add #citi{
+    margin-left: 0;
+    margin-right: 30px;
+}
+.add label{
+    width: 50px;
+    margin-right: 0;
+}
+.input-box .input,
+.input-box .textarea{
+    width: 100%;
+    outline: none;
+    border: 1px solid #009879;
+    font-size:15px;
+    padding: 8px 10px;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+}
+.input-box .view-textarea{
+    text-align: left;
+}
+.gender{
+    width: 100%;
+    display: flex;
+}
+.gender #genderm{
+    margin-right: 16px;
+}
+.gender #genderf{
+    margin-left: 16px;
+    margin-right: 16px;
+}
+.input-box .textarea{
+    resize: none;
+    height: 120px;
+  
+}
+
+.dept{
+    position: relative;
+    width: 100%;
+    height: 37px;
+}
+.dept::before{
+    content: "";
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    border: 8px solid;
+    border-color: #009879 transparent transparent transparent;
+    pointer-events: none;
+}
+.dept select{
+    -webkit-appearance: none;
+    appearance: none;
+    border: 1px solid #009879;
+    width: 100%;
+    height: 100%;
+    padding: 8px 10px;
+    border-radius: 5px;
+    outline: none;
+}
+.input:focus{
+    border: 1px solid #470098;
+}
+.btn{
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 20px;
+    margin: 0 10px;
+    border: 0;
+    background-color: #009879;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    outline: none;
+}
+.input-box:last-child{
+    margin-bottom: 0;
+}
+@media(max-width: 420px){
+    .input-box{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .input-box label{
+        margin-bottom: 5px;
+    }
+    .input-box .add{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .add #stat{
+        margin-right: 100%;
+    }
+    .add #citi{
+        margin-top: 10px;
+        margin-right: 100%;
+    }
+    .add label{
+        width: 0;
+        margin-right: 0;
+    }
+    .btn{
+        padding: 8px 0;
+        font-size: 18px;
+        margin: 8px 0;
+    }
+}
+/* FORM DESIGN END HERE ----------------------------------------------------------------------*/
+
+/* TABLE DESIGN START HERE ----------------------------------------------------------------------*/
+.table-container{
+    margin-top: 20px;
+    box-sizing: border-box;
+    /* border: 2px solid rgb(0, 255, 0);     */
+    min-height: 100vh;
+    width: 100vw;
+    
+}
+.table-content{
+    /* border: 2px solid rgb(31, 3, 99);  */
+    height: 98vh;
+    width: 90vw;
+    margin: auto;
+}
+.db-title {
+    font-size: 26px;
+    font-weight: 500;
+    text-align: center;
+    font-weight:bold;
+}
+.table{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 15px;
+    max-width:100vw;
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.15);    
+}
+.table thead tr{
+    position: static;
+    background-color: #334155;
+    color: #fff;
+    text-align: left;
+    font-weight: 500;
+    font-size: 12px;
+}
+.table th,
+.table td{
+    padding: 12px 10px;
+}
+.table tbody tr{
+    border-bottom:1px solid #dddddd;
+}
+.table tbody tr:last-of-type{
+    border-bottom: 2px solid #334155;
+} 
+.tbtn{
+    background:#c1b460;
+    color: white;
+    border-radius: 5px;
+    padding: 6px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+.tbtn:hover{
+    background: #c1b460;
+    color: white;
+    /* border: 2px solid black; */
+}
+
+/* TABLE DESIGN END HERE ----------------------------------------------------------------------*/

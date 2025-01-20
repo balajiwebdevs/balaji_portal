@@ -1,0 +1,103 @@
+
+    body {
+        background-color: white;
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        height: 70%;
+        /* border: solid 4px #c1b460; */
+    }
+
+    .left-section {
+        background-image: url('./img/istockphoto-1256316867-612x612-1.jpg');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .left-section h1 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    .right-section {
+        background-color: #fff;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 30px;
+    }
+
+    .btn-custom {
+        background-color: #15284c;
+        color: white;
+    }
+
+    .btn-google {
+        background-color: #c1b460;
+    }
+
+    #sign {
+        font-size:35px;
+        background: -webkit-linear-gradient(#c1b460, #15284C);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+        font: 35px Verdana bold;
+    }
+
+    /* Custom styles for the Log In button */
+    .btn {
+        display: inline-block;
+        padding: 0.75rem 1.5rem;
+        font-size: 1rem;
+        font-weight: 600;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    }
+
+    .btn-light {
+        background-color: #f8f9fc;
+        color: #15284c;
+        border: 2px solid #c1b460;
+    }
+
+    .log_btn {
+        background-color: #15284c; /* Initial background color */
+        color: #ffffff;            /* Text color */
+        border: 2px solid #c1b460; /* Border color matching your theme */
+        transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    }
+
+    /* Hover effect */
+    .log_btn:hover {
+        background-color: #c1b460; /* Background color on hover */
+        color:#ffffff;            /* Text color on hover */
+        transform: translateY(-2px); /* Slight upward movement */
+        text-decoration: none;     /* Remove underline on hover */
+    }
+
+    /* Optional: Active state */
+    .log_btn:active {
+        background-color: #a59f56; /* Darker background on click */
+        transform: translateY(0);  /* Reset movement */
+    }
